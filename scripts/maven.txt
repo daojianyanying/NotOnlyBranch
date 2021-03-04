@@ -1,0 +1,22 @@
+maven的学习:
+插件1：
+	pom.xml中添加
+		<plugin>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-maven-plugin</artifactId>
+			<version>9.4.7.v20170914</version>
+			<configuration>
+			  <scanIntervalSeconds>2</scanIntervalSeconds>
+
+			  <httpConnector>
+				<host>localhost</host>
+				<port>9090</port>
+				<idleTimeout>60000</idleTimeout>
+			  </httpConnector>
+			</configuration>
+		  </plugin>
+	  使用的命令：
+		mvn jetty:run
+	  插件是啥？待查询
+		
+		
